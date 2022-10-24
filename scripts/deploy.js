@@ -8,8 +8,10 @@ const hre = require("hardhat");
 
 async function main() {
 
+  const initialSupply = 100000000
+
   const YaraToken = await hre.ethers.getContractFactory("YaraToken");
-  const yaraToken = await YaraToken.deploy();
+  const yaraToken = await YaraToken.deploy(initialSupply);
 
   await yaraToken.deployed();
 
