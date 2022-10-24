@@ -2,7 +2,7 @@
 pragma solidity ^0.8.4;
 
 import "../ERC20/ERC20.sol";
-import "../Other/Ownable.sol";
+import "../Utils/Ownable.sol";
 import "../ERC20/ERC20Burnable.sol";
 
 contract YaraToken is ERC20, Ownable, ERC20Burnable {
