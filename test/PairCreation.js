@@ -5,7 +5,7 @@ const { ethers } = require("hardhat");
 
 const uniswapFactoryAbi = require("../abis/uniswapFactoryAbi.json");
 
-describe("Swap process", function () {
+describe("Pair creation process", function () {
 
     const initialSupply = 100000000
     let owner
